@@ -28,3 +28,4 @@ C:\Users\mussa\Desktop\myportfolio\obj\Debug\net8.0\refint\Myportfolio.dll
 C:\Users\mussa\Desktop\myportfolio\obj\Debug\net8.0\Myportfolio.pdb
 C:\Users\mussa\Desktop\myportfolio\obj\Debug\net8.0\Myportfolio.genruntimeconfig.cache
 C:\Users\mussa\Desktop\myportfolio\obj\Debug\net8.0\ref\Myportfolio.dll
+C:\Users\mussa\Desktop\myportfolio\obj\Debug\net8.0\Myportfolio.sourcelink.json
