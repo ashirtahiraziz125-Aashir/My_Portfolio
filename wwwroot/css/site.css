@@ -242,3 +242,62 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
 }
+/* ===== Social Proof Line ===== */
+.proof-line {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0078D4;
+  background: #E8F3FC;
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+}
+/* ===== Fade-In Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-center {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.project-card {
+  animation: fadeInUp 0.8s ease-out;
+}
+/* ===== Smooth Scroll ===== */
+html {
+  scroll-behavior: smooth;
+}
+/* ===== GitHub Stats ===== */
+.github-stats {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.github-stats img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+/* ===== Currently Learning ===== */
+.learning-card {
+  background: linear-gradient(135deg, #E8F3FC, #F4F7FA);
+  border-left: 4px solid #0078D4;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.learning-card p {
+  margin: 0;
+  font-size: 1rem;
+}
