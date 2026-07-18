@@ -45,10 +45,12 @@ body {
 }
 
 .text-center p.lead {
-  font-size: 1.25rem;
-  color: #5A6B7B;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #3D5266;
   max-width: 600px;
-  margin: 0.5rem auto 1.5rem auto;
+  margin: 0.5rem auto 1rem auto;
+  line-height: 1.5;
 }
 
 hr {
@@ -379,4 +381,101 @@ html {
   background: #19a463;
   box-shadow: 0 6px 20px rgba(29, 191, 115, 0.5);
   transform: translateY(-2px);
+}
+/* ===== Testimonials Placeholder ===== */
+.testimonial-placeholder {
+  background: linear-gradient(135deg, #E8F3FC, #D6E9F9);
+  border: 1px dashed #0078D4;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #0F2A47;
+}
+/* ===== Dark Mode Toggle Button ===== */
+.dark-toggle-btn {
+  background: transparent;
+  border: 1px solid #BFD9F2;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dark-toggle-btn:hover {
+  background: #0078D4;
+}
+
+/* ===== Dark Mode Theme ===== */
+body.dark-mode {
+  background-color: #0F1720;
+  color: #E1E8EF;
+}
+
+body.dark-mode .text-center,
+body.dark-mode .project-card,
+body.dark-mode .learning-card,
+body.dark-mode .testimonial-placeholder {
+  background: #1A2530;
+  color: #E1E8EF;
+}
+
+body.dark-mode h3,
+body.dark-mode h1.display-4,
+body.dark-mode .why-item {
+  color: #E1E8EF;
+}
+
+body.dark-mode .why-item {
+  background: #1A2530;
+}
+
+body.dark-mode p {
+  color: #B8C4D0;
+}
+/* ===== Dark Mode Fixes for Light-colored Boxes ===== */
+body.dark-mode .proof-line {
+  background: rgba(0, 120, 212, 0.15);
+  color: #7CC4FA;
+}
+
+body.dark-mode .service-item {
+  background: #22303D;
+  border-color: #2E3E4E;
+}
+
+body.dark-mode .service-item h5 {
+  color: #E1E8EF;
+}
+
+body.dark-mode .service-item p {
+  color: #B8C4D0;
+}
+
+body.dark-mode .skill-badge {
+  background: rgba(0, 120, 212, 0.2);
+  color: #7CC4FA;
+  border-color: #2E3E4E;
+}
+
+body.dark-mode .learning-card {
+  background: rgba(0, 120, 212, 0.1);
+  color: #E1E8EF;
+}
+
+body.dark-mode .testimonial-placeholder {
+  background: rgba(0, 120, 212, 0.1);
+  color: #B8C4D0;
+}
+body.dark-mode .project-card h4 {
+  color: #E1E8EF;
+}
+
+body.dark-mode .project-card p {
+  color: #B8C4D0;
+}
+body.dark-mode .text-center p.lead {
+  color: #B8C4D0;
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZI6KVCY61rXpnbHA3T3x363KOrLh8Nt9PNGm+xy+YcQ=",
+  "Hash": "4dCIJ3OHJnjkZ1qrgrSdW1Ug6dbz/KkXIkt6bSqiodg=",
   "Source": "Myportfolio",
   "BasePath": "_content/Myportfolio",
   "Mode": "Default",
@@ -72,25 +72,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\mussa\\Desktop\\myportfolio\\wwwroot\\favicon.ico",
-      "SourceId": "Myportfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mussa\\Desktop\\myportfolio\\wwwroot\\",
-      "BasePath": "_content/Myportfolio",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\mussa\\Desktop\\myportfolio\\wwwroot\\js\\site.js",
