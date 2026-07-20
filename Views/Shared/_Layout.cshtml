@@ -4,13 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Myportfolio</title>
+    <meta name="description" content="Ashir Tahir Aziz - Aspiring DevOps Engineer specializing in CI/CD pipelines, ASP.NET Core, Azure DevOps and GitHub Actions." />
+<meta name="keywords" content="DevOps Engineer, CI/CD, ASP.NET Core, Azure DevOps, GitHub Actions, Ashir Tahir Aziz" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Myportfolio.styles.css" asp-append-version="true" />
 </head>
 <body>
+
+<div id="loadingBar"></div>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Myportfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -62,6 +67,49 @@
             document.body.classList.toggle('dark-mode');
             toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
         });
+    }
+</script>
+
+<button id="scrollTopBtn" title="Go to top">⬆</button>
+<script>
+    window.addEventListener('load', function () {
+        const bar = document.getElementById('loadingBar');
+        bar.style.width = '100%';
+        setTimeout(function () {
+            bar.style.opacity = '0';
+        }, 400);
+    });
+</script>
+
+<script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+    });
+
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+<script>
+    const typingElement = document.getElementById('typingTagline');
+    if (typingElement) {
+        const text = typingElement.getAttribute('data-text');
+        let i = 0;
+        typingElement.textContent = '';
+        function typeWriter() {
+            if (i < text.length) {
+                typingElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 60);
+            }
+        }
+        typeWriter();
     }
 </script>
 
